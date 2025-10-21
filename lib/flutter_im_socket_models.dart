@@ -4,6 +4,7 @@ library flutter_im_socket_models;
 export 'src/socket_envelope.dart';
 export 'src/message_factory.dart';
 export 'src/socket_service.dart';
+export 'src/websocket_message.dart';
 
 // Models
 export 'src/models/empty_data.dart';
