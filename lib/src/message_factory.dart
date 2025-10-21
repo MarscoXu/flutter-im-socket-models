@@ -1,5 +1,4 @@
 import 'dart:collection';
-import 'package:flutter/foundation.dart';
 import 'models/empty_data.dart';
 import 'models/receive_message.dart';
 import 'models/login_qr_code.dart';
@@ -37,11 +36,11 @@ class MessageFactory {
       try {
         return parser(json);
       } catch (e, st) {
-        debugPrint('❌ MessageFactory decode failed for "$type": $e\n$st');
+        print('❌ MessageFactory decode failed for "$type": $e\n$st');
         return json;
       }
     }
-    debugPrint('⚠️ No parser registered for type: $type');
+    print('⚠️ No parser registered for type: $type');
     return json;
   }
 
@@ -87,6 +86,6 @@ class MessageFactory {
     register('CANCEL', (j) => EmptyData.fromJson(j));
     register('DROPPED', (j) => EmptyData.fromJson(j));
 
-    debugPrint('✅ MessageFactory: 37 event types registered');
+    print('✅ MessageFactory: 37 event types registered');
   }
 }

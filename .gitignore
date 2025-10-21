@@ -1,0 +1,23 @@
+# Flutter/Dart
+.dart_tool/
+.packages
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+
+# IDE
+.idea/
+.vscode/
+*.iml
+*.swp
+*.swo
+
+# Generated files
+*.g.dart
+
+# Test coverage
+coverage/
+
+# Misc
+.DS_Store
+*.log
